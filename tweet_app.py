@@ -35,7 +35,7 @@ if st.button("Predict Sentiment"):
     # make prediction using the loaded model
     prediction = model.predict(np.array([preprocessed_input]))
 
-    class_labels = {-1: "Negetive", 0: "Neutral", 1: "Positive"}
+    class_labels = {2: "Negetive", 0: "Neutral", 1: "Positive"}
 
     # find the index of the highest prediction
     predicted_class_index = np.argmax(prediction)

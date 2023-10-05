@@ -5,10 +5,10 @@ from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 
 #load the trained model
-model = load_model(r'C:\Users\USER\Desktop\APPLIED ALLIED PYTHON AND AI TUTORIAL\MLOPs\Sample_deployment\Tweet classification\NLP_model.h5')
+model = load_model('NLP_model.h5')
 
 #load tokenizer
-with open(r'C:\Users\USER\Desktop\APPLIED ALLIED PYTHON AND AI TUTORIAL\MLOPs\Sample_deployment\Tweet classification\tokenizer.pkl',"rb") as tk:
+with open('tokenizer.pkl',"rb") as tk:
     tokenizer = pickle.load(tk)
 
 # define function to preprocess text
